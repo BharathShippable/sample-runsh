@@ -5,5 +5,5 @@ jobs:
      - TASK:
         - script: export x=1
     on_success:
-        - script: echo $x
+        - script: sl
   
