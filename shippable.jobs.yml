@@ -2,9 +2,7 @@ jobs:
   - name: test-script
     type: runSh
     steps:
-      - IN: sample-script-3
-      - IN: trigger-1
-      - TASK:
+     - TASK:
         - script: export x=1
     on_success:
         - script: echo $x
