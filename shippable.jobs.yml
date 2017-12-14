@@ -6,4 +6,6 @@ jobs:
         - script: export x=1
     on_success:
         - script: sl
+        - script: ls
+        
   
