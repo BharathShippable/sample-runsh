@@ -1,13 +1,11 @@
 jobs:
-  - name: script-1
+  - name: test-script
     type: runSh
     steps:
       - IN: sample-script-3
       - IN: trigger-1
       - TASK:
-        - script: ls
-        - script: echo "ran ls 1234"
-        - script: pwd
+        - script: export x=1
     on_success:
-        - NOTIFY: notification-slack
+        - script: echo $x
   
