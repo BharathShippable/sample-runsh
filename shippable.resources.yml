@@ -10,4 +10,4 @@ resources:
     integration: do_token
   - name: docker-cli-config
     type: cliConfig
-    integration: docker
+    integration: docker_reg
