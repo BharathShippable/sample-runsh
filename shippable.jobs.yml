@@ -10,6 +10,6 @@ jobs:
   - name: do_token_test
     type: runSh
     steps:
-    - IN: docker-cli-config
+    - IN: do_token
     - TASK:
       - script: printenv
