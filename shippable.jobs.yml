@@ -11,5 +11,6 @@ jobs:
     type: runSh
     steps:
     - IN: do_token
+    - IN: docker-cli-config
     - TASK:
       - script: printenv
