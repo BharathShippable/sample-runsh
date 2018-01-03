@@ -8,3 +8,6 @@ resources:
   - name: do_token
     type: cliConfig
     integration: do_token
+  - name: docker-cli-config
+    type: cliConfig
+    integration: docker
