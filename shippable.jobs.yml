@@ -7,5 +7,9 @@ jobs:
     on_success:
         - script: sl
         - script: ls
-        
-  
+  - name: do_token_test
+    type: runSh
+    steps:
+    - IN: do_token
+    - TASK:
+      - script: printenv
