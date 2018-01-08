@@ -3,7 +3,7 @@ jobs:
     type: runSh
     steps:
      - TASK:
-        - script: sleep 2
+        - script: sleep 2m
   - name: do_token_test
     type: runSh
     steps:
