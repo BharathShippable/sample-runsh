@@ -3,10 +3,7 @@ jobs:
     type: runSh
     steps:
      - TASK:
-        - script: export x=1
-    on_success:
-        - script: sl
-        - script: ls
+        - script: sleep 2
   - name: do_token_test
     type: runSh
     steps:
