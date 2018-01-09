@@ -10,3 +10,9 @@ jobs:
     - IN: do_token
     - TASK:
       - script: printenv
+      
+  - name: simple-runsh-U1404
+    type: runSh
+    steps:
+      - TASK:
+        - script: sleep 2m
