@@ -8,7 +8,7 @@ jobs:
            container: true
            options:
              imageName: drydock/u16
-             imageTag: v6.1.1
+             imageTag: v5.10.4
              pull: false
          script: ls
   - name: do_token_test
