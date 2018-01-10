@@ -3,13 +3,14 @@ jobs:
     type: runSh
     steps:
      - TASK:
-        - runtime:
-            container: true
-            options:
-              imageName: drydock/u16
-              imageTag: v6.1.1
-              pull: false
-        - script: sleep 2m
+         name: check_container
+         runtime:
+           container: true
+           options:
+             imageName: drydock/u16
+             imageTag: v6.1.1
+             pull: false
+         script: ls
   - name: do_token_test
     type: runSh
     steps:
