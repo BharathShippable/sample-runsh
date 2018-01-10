@@ -3,6 +3,10 @@ jobs:
     type: runSh
     steps:
      - TASK:
+        - runtime:
+            container: true
+            image: drydock/u16:v6.1.1
+            pull: false
         - script: sleep 2m
   - name: do_token_test
     type: runSh
