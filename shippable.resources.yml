@@ -11,3 +11,8 @@ resources:
   - name: docker-cli-config
     type: cliConfig
     integration: docker_reg
+  - name: aws-cli
+    type: cliConfig
+    integration: aws-cli
+    pointer:
+      region: us-east-1
