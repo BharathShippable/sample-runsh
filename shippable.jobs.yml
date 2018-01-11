@@ -15,6 +15,7 @@ jobs:
     type: runSh
     steps:
     - IN: do_token
+    - IN: aws-cli
     - TASK:
       - script: printenv
       
